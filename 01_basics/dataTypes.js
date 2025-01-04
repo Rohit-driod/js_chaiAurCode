@@ -11,3 +11,11 @@ symbol => unique features
 object
  */
 console.log(typeof null);
+
+/*
+reference type(non-primitive)
+
+arrays
+objects
+functions
+*/
