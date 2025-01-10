@@ -39,10 +39,22 @@ const user =[
     }
 ]
 
-console.log(Object.keys(fbUser))//important
+// console.log(Object.keys(fbUser))//important
 
-console.log(fbUser.hasOwnProperty('isLoggedIn'));//to check availablity of keys & values
-console.log(fbUser.hasOwnProperty('isLogged'));//to check availablity of keys & values
+// console.log(fbUser.hasOwnProperty('isLoggedIn'));//to check availablity of keys & values
+// console.log(fbUser.hasOwnProperty('isLogged'));//to check availablity of keys & values
+
+
+const course = {
+    courseName : 'js in hindi',
+    price : '999',
+    courseInstructor : 'Hitesh'
+}
+
+const {courseInstructor:instructor} = course//destructure
+console.log(instructor);
+
+
 
 
 
