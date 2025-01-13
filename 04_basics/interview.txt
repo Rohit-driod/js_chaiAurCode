@@ -1,0 +1,13 @@
+Javascript Execution Context
+
+{} --> Global Execution Context
+   --> Function Execution Context
+   --> Eval Execution Context 
+
+
+// how code executes
+
+--> memory creation phase/creation phase
+--> Execution phase
+
+
