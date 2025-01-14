@@ -42,7 +42,7 @@ for (let index = 1; index <= 20; index++) {
         console.log(`detected 5`);
         continue //skip condition without breaking the loop
     }
-    console.log(`value of i is ${index}`);
+    console.log(`values of i is ${index}`);
     
     
 }
