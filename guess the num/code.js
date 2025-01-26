@@ -3,14 +3,14 @@ console.log(rand);
 
 const submit = document.querySelector("#subt")
 const userInput = document.querySelector("#guessField")
-let prevGuess = document.querySelector(".guesses")
+const guessSlot = document.querySelector(".guesses")
 const remaining = document.querySelector(".lastResult")
 const lowOrHi = document.querySelector(".lowOrHi")
 const satrtOver = document.querySelector(".resultParas")
 
 const p = document.createElement("p")
 
-let guesses = []
+let prevGuess = []
 let numGuess = 1
 
 
@@ -64,7 +64,7 @@ const displayMessage = ((message) =>{
 
 const displayGuess = (guess)=>{
     userInput.value = ""
-    prevGuess.innerHTML += `${guess} `
+    guessSlot.innerHTML += `${guess} `
     numGuess++
     remaining.innerHTML = `${11-numGuess}`
 }
@@ -82,11 +82,13 @@ const newGame = (()=>{
     const newButton = document.querySelector("#newGame")
     newButton.addEventListener("click",function(event){
      rand = parseInt(Math.random()*100+1)
+     console.log(rand);
+     
      prevGuess = []
      numGuess = 1
-     prevGuess.innerHTML =""
+     guessSlot.innerHTML =" "
      remaining.innerHTML = `${11-numGuess}`
-     userInput.removeAttribute("disable")
+     userInput.removeAttribute("disabled")
      satrtOver.removeChild(p)
      playGame =true
     })
@@ -94,3 +96,4 @@ const newGame = (()=>{
 })
 
 
+ 
